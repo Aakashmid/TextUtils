@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h2>Analyze text</h2>
+    <form action="/analyze_text" method="GET">
+        <!-- {% csrf_token %} -->
+        <div>
+            <textarea name="text" id="text" cols="30" rows="10" style="width: 796px;
+height: 117px;">Enter text </textarea>
+        </div>
+        <div>
+
+            <input type="checkbox" name="removepunc" > Remove punctuations<br>
+            <input type="checkbox" name="Text_capital"> Capitallised text<br>
+            <input type="checkbox" name="Lower_text"> Lower text<br>
+            <input type="checkbox" name="R_newline"> Remove New line character<br>
+            <input type="checkbox" name="char_count"> Count total character in text<br>
+            <!-- <input type="checkbox" name=""> Remove punctuations<br> -->
+            <button type="submit"> Analyze </button>
+        </div>
+    </form>
+</body>
+
+</html>
